@@ -1,0 +1,30 @@
+<!-- This is the part of the code that will serve as a kind of Graphic User Interface for the Survey app-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata about the HTML document -->
+    <meta charset="UTF-8"> <!-- Character encoding for the  document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport to make the website responsive -->
+    <title>Expense Survey</title> <!-- Title of the web page, displayed in the browser tab -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Link to an external CSS stylesheet for styling the page -->
+</head>
+<body>
+    <!-- Main content of the page -->
+    <h1>Expense Survey</h1> <!-- Main heading of the page -->
+
+    <!-- HTML form for user input -->
+    <form method="post"> <!-- Form element with method set to POST, meaning form data will be sent in the body of the request -->
+        <!-- Input fields for various data points-->
+        Age: <input type="text" name="age" required><br> <!-- Input field for age , required for form submission-->
+        Gender: <input type="text" name="gender" required><br> <!-- Input field for gender, required for form submission-->
+        Total Income: <input type="text" name="total_income" required><br> <!-- Input field for total income, required for form submission-->
+        Utilities: <input type="text" name="utilities"><br> <!-- Input field for utilities, required for form submission-->
+        Entertainment: <input type="text" name="entertainment"><br> <!-- Input field for entertainment, required for form submission-->
+        School Fees: <input type="text" name="school_fees"><br> <!-- Input field for school fees, required for form submission-->
+        Shopping: <input type="text" name="shopping"><br> <!-- Input field for shopping, required for form submission-->
+        Healthcare: <input type="text" name="healthcare"><br> <!-- Input field for healthcare, required for form submission-->
+        <input type="submit" value="Submit"> <!-- Submit button to send the form data -->
+    </form>
+</body>
+</html>
